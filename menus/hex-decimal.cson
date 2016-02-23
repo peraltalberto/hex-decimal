@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Pasar a Decimal'
+      'command': 'hex-decimal:toDecimal'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'hex-decimal'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'hex-decimal:toggle'
+        }
+      ]
+    ]
+  }
+]
